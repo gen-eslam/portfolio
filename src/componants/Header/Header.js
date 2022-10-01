@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from 'react-typical';
+import profile_img from'../../assets/profile.png';
 import "./Header.css";
 
 const Header =() =>{
@@ -16,7 +17,7 @@ const Header =() =>{
                     'Full Stack Developer ☕️👨‍💻',1000,
                     'Front-end Developer ✅',1000,
                     'Back-end Developer ✅',1000,
-                    'Flutter Developer ✅',1000
+                    'MERN STACK Developer ✅',1000
                 ]} loop={Infinity} wrapper='b'/>            
             </h2>
             <p>Successful engineers know how to use the right programming languages, 
@@ -26,9 +27,15 @@ const Header =() =>{
                 {/*payment links*/}
             
                 <div className="header-payment-container">
-                    <button>Hire Me</button>
-                    <i className="fa-brands fa-paypal"></i>
+                    <button><strong>Hire Me</strong></button>
                 </div>
+        </div>
+        {/* Image container*/}
+        <div className="profile-img-container">
+            <img src={profile_img} alt="img" />
+         
+        
+
         </div>
 
       </div>
